@@ -1,0 +1,30 @@
+let gif;
+
+function preload (){
+gif=loadImage ('assets/redsquare800pi.gif');
+}
+
+
+function setup() {//runs one time
+createCanvas(windowWidth, windowHeight);
+  background (255,0,0);
+  fill ('yellow');
+  strokeWeight (8);
+}
+
+function draw() {//ruins in a loop
+  var num = 2;
+  var sidelen = windowWidth/num;
+  
+    for (var y = 0; y < windowHeight; y= y +sidelen){
+    for (var x = 0; x < windowWidth; x= x +sidelen){
+    
+    image (gif,x,y,sidelen,sidelen);
+
+function windowResized(){
+  resizeCanvas (windowWidth, windowHeight);
+}
+
+
+
+
