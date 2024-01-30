@@ -1,7 +1,7 @@
 let gif;
 
 function preload (){
-gif=loadImage ('assets/redsquare800pi.gif');
+gif=loadImage ('assets/.gif');
 }
 
 
